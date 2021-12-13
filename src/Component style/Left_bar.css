@@ -1,0 +1,13 @@
+.Left_bar{
+    background-color: rgba(128, 128, 128, 0.67);
+    width: 15%;
+    height: 100vh;
+    text-align: center;
+}
+
+.Container_left-button{
+    display: grid;
+justify-items: center;
+
+}
+

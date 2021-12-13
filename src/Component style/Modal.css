@@ -1,0 +1,79 @@
+
+
+/*модальная обертка*/
+.modal_wrapper{
+    position: absolute;
+    width: 85%;
+}
+
+/*модальная обертка в открытом сосотоянии*/
+.modal_wrapper.open{
+    position: absolute;
+    right: 1px;
+    left: auto;
+    top: 50px;
+    display: block;
+    height: 90%;
+}
+
+/*модальная обертка в закрытом состоянии*/
+.modal_wrapper.close{
+    height: 0;
+    display: none;
+}
+
+/*тело модального окна*/
+.modal_body{
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    background: white;
+    overflow-y: scroll;
+}
+
+/*прячем скролл*/
+.modal_body::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+
+/*прячем скролл для firefox и safari*/
+.modal_body{
+    -ms-overflow-style: none;
+    scrollbar-width:none;
+}
+
+/*кнопка закрытия модального окна*/
+.modal_close{
+    text-align: right;
+    margin: -15px 0 0 0;
+    font-size: 40px;
+    color: gray;
+    cursor: pointer;
+}
+/*кнопки переключения мониторов*/
+.monitors{
+    margin:0 0 1% 0;
+    width: 80%;
+    text-align: center;
+
+}
+
+/*кнопки переключения мониторов для экранов от 540px*/
+@media screen and (max-width: 540px){
+    .monitors{
+        font-size: 5px;
+    }
+}
+
+/*окно вывода*/
+.camera_monitor1{
+    position: relative;
+    left: 1%;
+    width: 40%;
+    height: 40%;
+    border: gray solid 2px ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("https://nemcd.com/wp-content/uploads/2014/03/CMS-3-18-600x480.png");
+}
